@@ -2,7 +2,9 @@
 
     class Movie{
 
-       
+        public $title;
+        public $genre;
+        public $director;
 
         
     }
