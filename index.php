@@ -12,9 +12,13 @@
             $this -> genre = $genre;
             $this->director = $director;
         }
+
+        public function getAllMovie(){
+            return "Titolo: " . $this -> title . "<br>" . " Genere: " . $this -> genre . "<br>" . " Regista: " . $this -> director;
+        }
     }
 
     $movie1 = new Movie("Cado dalle nubi", "Commedia", "Checco Zalone");
-    
-    var_dump($movie1)
+
+    echo $movie1 -> getAllMovie();
 ?>
